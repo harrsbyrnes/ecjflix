@@ -1,0 +1,162 @@
+{
+	"changeLanguagePage": {
+		"changeLanguageAppBarTitle": "语言",
+		"selectLanguage": "选择语言",
+		"englishString": "英语",
+		"hindiString": "印地语",
+		"arabicString": "阿拉伯",
+		"chineseString": "中文",
+		"confirmString": "改变语言？",
+		"sureDialogueString": "您确定要更改此语言设置吗？",
+		"closeString": "关",
+		"yesString": "是"
+	},
+
+	"loginPage": {
+		"welcomeBackString": "欢迎回来",
+		"loginYourAccountString": "登录您的账户",
+		"emailString": "电子邮件",
+		"passwordString": "密码",
+		"loginString": "登录",
+		"forgotPasswordString": "忘记密码了吗？",
+		"dontHaveAccountString": "没有帐号？",
+		"pressBackOnceAgainString": "再次按返回以退出。"
+	},
+
+	"signupPage": {
+		"dontHaveAccountString": "没有帐号？",
+		"createAccountString": "创建帐号",
+		"usernameString": "用户名",
+		"emailString": "电子邮件",
+		"passwordString": "密码",
+		"confirmPasswordString": "确认密码",
+		"alreadyHaveAccountString": "已经有帐号了？"
+	},
+	
+	"forgotPasswordString": {
+		"lostPasswordString": "忘记密码？",
+		"dontWorryString": "别担心我们在这里",
+		"enterEmailString": "输入注册电子邮件",
+		"resetPasswordString": "重设密码"
+	},
+
+	"bottomBar": {
+		"homeString": "家",
+		"searchString": "搜索",
+		"watchLaterString": "稍后观看",
+		"accountString": "帐户",
+		"pressBackOnceAgainString": "再次按返回以退出。"
+	},
+
+	"homePage": {
+		"exploreByGenreString": "按类型探索",
+		"specialAndLatestMoviesString": "特价商品和最新电影",
+		"moreString": "更多",
+		"multiplexMoviesString": "多重电影",
+		"popularMoviesString": "热门电影",
+		"bestOfKidsString": "最好的孩子"
+	},
+
+	"moreListPage": {
+		"multiplexMoviesString": "多重电影"
+	},
+
+	"searchPage": {
+		"whatYouLikeString": "您今天想看什么？",
+		"searchForShowsString": "搜索节目，系列和电影",
+		"exploreByGenreString": "按类型探索",
+		"specialForYouString": "为您特别准备"
+	},
+
+	"watchLaterPage": {
+		"watchLaterString": "稍后观看",
+		"deleteString": "删除",
+		"itemRemovedString": "项目已删除",
+		"noItemInWatchLaterString": "稍后观看中没有项目"
+	},
+
+	"accountPage": {
+		"accountString": "帐户",
+		"logoutString": "登出",
+		"notPremiumString": "不溢价",
+		"getVidFlixPremiumString": "获取VidFlix Premium",
+		"editProfileString": "编辑个人资料",
+		"appSettingsString": "应用程式设定",
+		"changeLanguageString": "改变语言",
+		"privacyPolicy": "隐私政策",
+		"thanksForActivatingString": "感谢您激活高级功能！",
+		"choosePaymentMethodString": "选择付款方式",
+		"cancelString": "取消",
+		"payString": "工资",
+		"vidFlixPremiumString": "VidFlix Premium",
+		"chargedYearlyString": "每年收费",
+		"nonRefundableString": "不退还",
+		"chargedMonthlyString": "每月收费",
+		"sureLogoutString": "您确定要注销吗？"
+	},
+
+	"editProfilePage": {
+		"editProfileString": "编辑个人资料",
+		"phoneNumberString": "电话号码",
+		"emailString": "电子邮件",
+		"passwordString": "密码",
+		"changePhoneNumberString": "更改电话号码",
+		"enterPhoneNumberString": "输入电话号码",
+		"okayString": "好的",
+		"cancelString": "取消",
+		"changeYourPasswordString": "更改您的密码",
+		"oldPasswordString": "旧密码",
+		"newPasswordString": "新密码",
+		"confirmNewPasswordString": "确认新密码",
+		"changeEmailString": "更改电子邮件",
+		"enterEmailString": "输入电子邮件",
+		"chooseOptionsString": "选择选项",
+		"yourOptionsAreString": "您的选择是",
+		"cameraString": "相机",
+		"chooseFormGalleryString": "从图库中选择"
+	},
+
+	"appSettingsPage": {
+		"appSettingsString": "应用程式设定",
+		"cellularDataString": "蜂窝数据",
+		"cellularDataForDownloadsString": "蜂窝数据下载",
+		"videoQualityForDownloadsString": "下载的视频质量",
+		"downloadsFasterString": "下载速度更快，占用的存储空间更少",
+		"useMoreStorageString": "使用更多存储空间",
+		"deleteAllDownloadsString": "删除所有下载",
+		"removeAllDownloadsString": "这将从手机中删除所有下载的视频。",
+		"nothingToDeleteString": "没什么可删除的",
+		"noDownloadedVideoString": "您的设备上没有下载的视频",
+		"okayString": "好的"
+	},
+
+	"privacyPolicyPage": {
+		"privacyPolicyString": "隐私政策"
+	},
+
+	"categoryPage": {
+		"newMoviesString": "新电影",
+		"moreString": "更多",
+		"hitMoviesString": "热门电影",
+		"popularMoviesString": "热门电影",
+		"trendingString": "流行趋势"
+	},
+
+	"videoPage": {
+		"webSeriesString": "网络系列",
+		"episodesString": "集数",
+		"youMayAlsoLikeString": "你也许也喜欢",
+		"moreString": "更多"
+	},
+
+	"videoPlayPage": {
+		"moreEpisodesString": "更多剧集",
+		"youMayAlsoLikeString": "你也许也喜欢",
+		"moreString": "更多"
+	},
+
+	"notificationPage": {
+		"notificationsString": "通知事项",
+		"noNotificationsString": "没有通知"
+	}
+}

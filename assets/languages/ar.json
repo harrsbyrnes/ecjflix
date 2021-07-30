@@ -1,0 +1,162 @@
+{
+	"changeLanguagePage": {
+		"changeLanguageAppBarTitle": "لغة",
+		"selectLanguage": "اختار اللغة",
+		"englishString": "الإنجليزية",
+		"hindiString": "الهندية",
+		"arabicString": "عربى",
+		"chineseString": "صينى",
+		"confirmString": "تغيير اللغة؟",
+		"sureDialogueString": "هل أنت متأكد أنك تريد تغيير إعداد اللغة هذا؟",
+		"closeString": "قريب",
+		"yesString": "نعم"
+	},
+
+	"loginPage": {
+		"welcomeBackString": "مرحبا بعودتك",
+		"loginYourAccountString": "تسجيل الدخول في حسابك",
+		"emailString": "البريد الإلكتروني",
+		"passwordString": "كلمه السر",
+		"loginString": "تسجيل الدخول",
+		"forgotPasswordString": "نسيت رقمك السري؟",
+		"dontHaveAccountString": "ليس لديك حساب؟",
+		"pressBackOnceAgainString": "اضغط على رجوع مرة أخرى للخروج."
+	},
+
+	"signupPage": {
+		"dontHaveAccountString": "ليس لديك حساب؟",
+		"createAccountString": "إنشاء حساب",
+		"usernameString": "اسم المستخدم",
+		"emailString": "البريد الإلكتروني",
+		"passwordString": "كلمه السر",
+		"confirmPasswordString": "تأكيد كلمة المرور",
+		"alreadyHaveAccountString": "لديك حساب بالفعل؟"
+	},
+	
+	"forgotPasswordString": {
+		"lostPasswordString": "كلمة مرور مفقودة؟",
+		"dontWorryString": "لا تقلق نحن هنا",
+		"enterEmailString": "أدخل البريد الإلكتروني المسجل",
+		"resetPasswordString": "إعادة تعيين كلمة المرور"
+	},
+
+	"bottomBar": {
+		"homeString": "الصفحة الرئيسية",
+		"searchString": "بحث",
+		"watchLaterString": "سأشاهده لاحقا",
+		"accountString": "الحساب",
+		"pressBackOnceAgainString": "اضغط على رجوع مرة أخرى للخروج."
+	},
+
+	"homePage": {
+		"exploreByGenreString": "اكتشف حسب النوع",
+		"specialAndLatestMoviesString": "العروض الخاصة وأحدث الأفلام",
+		"moreString": "أكثر",
+		"multiplexMoviesString": "أفلام متعددة",
+		"popularMoviesString": "أفلام شعبية",
+		"bestOfKidsString": "أفضل الأطفال"
+	},
+
+	"moreListPage": {
+		"multiplexMoviesString": "أفلام متعددة"
+	},
+
+	"searchPage": {
+		"whatYouLikeString": "ماذا تريد ان تشاهد اليوم؟",
+		"searchForShowsString": "ابحث عن العروض والمسلسلات والأفلام",
+		"exploreByGenreString": "اكتشف حسب النوع",
+		"specialForYouString": "خصيصا لك"
+	},
+
+	"watchLaterPage": {
+		"watchLaterString": "سأشاهده لاحقا",
+		"deleteString": "حذف",
+		"itemRemovedString": "تمت إزالة العنصر",
+		"noItemInWatchLaterString": "لا يوجد عنصر في المشاهدة لاحقًا"
+	},
+
+	"accountPage": {
+		"accountString": "الحساب",
+		"logoutString": "تسجيل خروج",
+		"notPremiumString": "ليس قسط",
+		"getVidFlixPremiumString": "احصل على VidFlix Premium",
+		"editProfileString": "تعديل الملف الشخصي",
+		"appSettingsString": "إعدادات التطبيقات",
+		"changeLanguageString": "تغيير اللغة",
+		"privacyPolicy": "سياسة الخصوصية",
+		"thanksForActivatingString": "شكرا لتفعيل بريميوم!",
+		"choosePaymentMethodString": "اختر وسيلة الدفع",
+		"cancelString": "إلغاء",
+		"payString": "دفع",
+		"vidFlixPremiumString": "VidFlix بريميوم",
+		"chargedYearlyString": "يتقاضى سنويا",
+		"nonRefundableString": "غير قابل للاسترجاع",
+		"chargedMonthlyString": "تدفع شهريا",
+		"sureLogoutString": "هل تريد بالتأكيد تسجيل الخروج؟"
+	},
+
+	"editProfilePage": {
+		"editProfileString": "تعديل الملف الشخصي",
+		"phoneNumberString": "رقم الهاتف",
+		"emailString": "البريد الإلكتروني",
+		"passwordString": "كلمه السر",
+		"changePhoneNumberString": "غير رقم الهاتف",
+		"enterPhoneNumberString": "أدخل رقم الهاتف",
+		"okayString": "حسنا",
+		"cancelString": "إلغاء",
+		"changeYourPasswordString": "غير كلمة المرور الخاصة بك",
+		"oldPasswordString": "كلمة سر قديمة",
+		"newPasswordString": "كلمة مرور جديدة",
+		"confirmNewPasswordString": "تأكيد كلمة المرور الجديدة",
+		"changeEmailString": "تغيير البريد الالكتروني",
+		"enterEmailString": "أدخل البريد الإلكتروني",
+		"chooseOptionsString": "اختر خيارات",
+		"yourOptionsAreString": "خياراتك",
+		"cameraString": "الة تصوير",
+		"chooseFormGalleryString": "اختر من المعرض"
+	},
+
+	"appSettingsPage": {
+		"appSettingsString": "إعدادات التطبيقات",
+		"cellularDataString": "بيانات خليوية",
+		"cellularDataForDownloadsString": "البيانات الخلوية للتنزيل",
+		"videoQualityForDownloadsString": "جودة الفيديو للتنزيل",
+		"downloadsFasterString": "يتم التنزيل بشكل أسرع ويستخدم مساحة تخزين أقل",
+		"useMoreStorageString": "استخدم المزيد من مساحة التخزين",
+		"deleteAllDownloadsString": "حذف كافة التنزيلات",
+		"removeAllDownloadsString": "سيؤدي هذا إلى إزالة جميع مقاطع الفيديو التي تم تنزيلها من هاتفك.",
+		"nothingToDeleteString": "لا شيء لحذفه",
+		"noDownloadedVideoString": "لا توجد مقاطع فيديو تم تنزيلها على جهازك",
+		"okayString": "حسنا"
+	},
+
+	"privacyPolicyPage": {
+		"privacyPolicyString": "سياسة الخصوصية"
+	},
+
+	"categoryPage": {
+		"newMoviesString": "أفلام جديدة",
+		"moreString": "أكثر",
+		"hitMoviesString": "ضرب الأفلام",
+		"popularMoviesString": "أفلام شعبية",
+		"trendingString": "الشائع"
+	},
+
+	"videoPage": {
+		"webSeriesString": "سلسلة الويب",
+		"episodesString": "الحلقات",
+		"youMayAlsoLikeString": "ربما يعجبك أيضا",
+		"moreString": "أكثر"
+	},
+
+	"videoPlayPage": {
+		"moreEpisodesString": "المزيد من الحلقات",
+		"youMayAlsoLikeString": "ربما يعجبك أيضا",
+		"moreString": "أكثر"
+	},
+
+	"notificationPage": {
+		"notificationsString": "إشعارات",
+		"noNotificationsString": "لا إشعارات"
+	}
+}

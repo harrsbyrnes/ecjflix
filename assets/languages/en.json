@@ -1,0 +1,163 @@
+{
+	"changeLanguagePage": {
+		"changeLanguageAppBarTitle": "Language",
+		"selectLanguage": "Select Language",
+		"englishString": "English",
+		"hindiString": "Hindi",
+		"arabicString": "Arabic",
+		"chineseString": "Chinese",
+		"confirmString": "Change Language?",
+		"sureDialogueString": "Are you sure you want to change this language setting?",
+		"closeString": "Close",
+		"yesString": "Yes"
+	},
+
+	"loginPage": {
+		"welcomeBackString": "Welcome back",
+		"loginYourAccountString": "Login in your account",
+		"emailString": "Email",
+		"passwordString": "Password",
+		"loginString": "Login",
+		"forgotPasswordString": "Forgot your password?",
+		"dontHaveAccountString": "Don't have account?",
+		"pressBackOnceAgainString": "Press Back Once Again to Exit."
+	},
+
+	"signupPage": {
+		"dontHaveAccountString": "Don't have account?",
+		"createAccountString": "Create Account",
+		"usernameString": "Username",
+		"emailString": "Email",
+		"passwordString": "Password",
+		"confirmPasswordString": "Confirm Password",
+		"alreadyHaveAccountString": "Already have account?"
+	},
+	
+	"forgotPasswordString": {
+		"lostPasswordString": "Lost password?",
+		"dontWorryString": "Don't worry we are here",
+		"enterEmailString": "Enter Registered Email",
+		"resetPasswordString": "Reset password"
+	},
+
+	"bottomBar": {
+		"homeString": "Home",
+		"searchString": "Search",
+		"watchLaterString": "Watch Later",
+		"accountString": "Account",
+		"pressBackOnceAgainString": "Press Back Once Again to Exit."
+	},
+
+	"homePage": {
+		"exploreByGenreString": "Explore by Genre",
+		"specialAndLatestMoviesString": "Specials & Latest Movies",
+		"moreString": "MORE",
+		"multiplexMoviesString": "Multiplex Movies",
+		"popularMoviesString": "Popular Movies",
+		"bestOfKidsString": "Best of Kids"
+	},
+
+	"moreListPage": {
+		"multiplexMoviesString": "Multiplex Movies"
+	},
+
+	"searchPage": {
+		"whatYouLikeString": "What'd you like to watch today?",
+		"searchForShowsString": "Search for shows, series & movies",
+		"exploreByGenreString": "Explore by Genre",
+		"specialForYouString": "Special for You"
+	},
+
+	"watchLaterPage": {
+		"watchLaterString": "Watch Later",
+		"deleteString": "Delete",
+		"itemRemovedString": "Item Removed",
+		"noItemInWatchLaterString": "No Item in Watch Later"
+	},
+
+	"accountPage": {
+		"accountString": "Account",
+		"logoutString": "Logout",
+		"notPremiumString": "Not Premium",
+		"getVidFlixPremiumString": "Get VidFlix Premium",
+		"editProfileString": "Edit Profile",
+		"appSettingsString": "App Settings",
+		"changeLanguageString": "Change Language",
+		"privacyPolicy": "Privacy Policy",
+		"thanksForActivatingString": "Thanks for Activating Premium!",
+		"choosePaymentMethodString": "Choose payment method",
+		"cancelString": "Cancel",
+		"payString": "Pay",
+		"vidFlixPremiumString": "VidFlix Premium",
+		"chargedYearlyString": "Charged yearly",
+		"nonRefundableString": "Non-refundable",
+		"chargedMonthlyString": "Charged monthly",
+		"sureLogoutString": "You sure want to logout?"
+	},
+
+	"editProfilePage": {
+		"editProfileString": "Edit Profile",
+		"phoneNumberString": "Phone Number",
+		"emailString": "Emailo",
+		"addressString": "Address",
+		"passwordString": "Password",
+		"changePhoneNumberString": "Change Phone Number",
+		"enterPhoneNumberString": "Enter Phone Number",
+		"okayString": "Okay",
+		"cancelString": "Cancel",
+		"changeYourPasswordString": "Change Your Password",
+		"oldPasswordString": "Old Password",
+		"newPasswordString": "New Password",
+		"confirmNewPasswordString": "Confirm New Password",
+		"changeEmailString": "Change Email",
+		"enterEmailString": "Enter Email",
+		"chooseOptionsString": "Choose Options",
+		"yourOptionsAreString": "Your options are",
+		"cameraString": "Camera",
+		"chooseFormGalleryString": "Choose from Gallery"
+	},
+
+	"appSettingsPage": {
+		"appSettingsString": "App Settings",
+		"cellularDataString": "Cellular Data",
+		"cellularDataForDownloadsString": "Cellular Data for Downloads",
+		"videoQualityForDownloadsString": "Video Quality for Downloads",
+		"downloadsFasterString": "Downloads faster and uses less storage",
+		"useMoreStorageString": "Use more storage",
+		"deleteAllDownloadsString": "Delete All Downloads",
+		"removeAllDownloadsString": "This will remove all downloaded videos from your phone.",
+		"nothingToDeleteString": "Nothing to Delete",
+		"noDownloadedVideoString": "There are no downloaded videos on your device",
+		"okayString": "Okay"
+	},
+
+	"privacyPolicyPage": {
+		"privacyPolicyString": "Privacy Policy"
+	},
+
+	"categoryPage": {
+		"newMoviesString": "New Movies",
+		"moreString": "MORE",
+		"hitMoviesString": "Hit Movies",
+		"popularMoviesString": "Popular Movies",
+		"trendingString": "Trending"
+	},
+
+	"videoPage": {
+		"webSeriesString": "Web Series",
+		"episodesString": "Episodes",
+		"youMayAlsoLikeString": "You May Also Like",
+		"moreString": "MORE"
+	},
+
+	"videoPlayPage": {
+		"moreEpisodesString": "More Episodes",
+		"youMayAlsoLikeString": "You May Also Like",
+		"moreString": "MORE"
+	},
+
+	"notificationPage": {
+		"notificationsString": "Notifications",
+		"noNotificationsString": "No Notifications"
+	}
+}

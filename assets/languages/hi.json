@@ -1,0 +1,162 @@
+{
+	"changeLanguagePage": {
+		"changeLanguageAppBarTitle": "भाषा",
+		"selectLanguage": "भाषा का चयन करें",
+		"englishString": "अंग्रेज़ी",
+		"hindiString": "हिन्दी",
+		"arabicString": "अरबी",
+		"chineseString": "चीनी",
+		"confirmString": "भाषा बदलना चाहते है?",
+		"sureDialogueString": "क्या आप वाकई इस भाषा सेटिंग को बदलना चाहते हैं?",
+		"closeString": "बंद करे",
+		"yesString": "हाँ"
+	},
+
+	"loginPage": {
+		"welcomeBackString": "वापसी पर स्वागत है",
+		"loginYourAccountString": "अपने खाते में लॉगिन करें",
+		"emailString": "ईमेल",
+		"passwordString": "पासवर्ड",
+		"loginString": "लॉग इन करें",
+		"forgotPasswordString": "क्या आप अपना पासवर्ड भूल गए?",
+		"dontHaveAccountString": "खाता नहीं है?",
+		"pressBackOnceAgainString": "बाहर निकलने के लिए एक बार फिर से दबाएं।"
+	},
+
+	"signupPage": {
+		"dontHaveAccountString": "खाता नहीं है?",
+		"createAccountString": "खाता बनाएं",
+		"usernameString": "उपयोगकर्ता नाम",
+		"emailString": "ईमेल",
+		"passwordString": "पासवर्ड",
+		"confirmPasswordString": "पासवर्ड की पुष्टि कीजिये",
+		"alreadyHaveAccountString": "पहले से ही खाता है?"
+	},
+	
+	"forgotPasswordString": {
+		"lostPasswordString": "पासवर्ड खो गया?",
+		"dontWorryString": "चिंता मत करो हम यहाँ हैं",
+		"enterEmailString": "पंजीकृत ईमेल दर्ज करें",
+		"resetPasswordString": "पासवर्ड रीसेट"
+	},
+
+	"bottomBar": {
+		"homeString": "घर",
+		"searchString": "खोज",
+		"watchLaterString": "बाद में देखें",
+		"accountString": "खाता",
+		"pressBackOnceAgainString": "बाहर निकलने के लिए एक बार फिर से दबाएं।"
+	},
+
+	"homePage": {
+		"exploreByGenreString": "शैली द्वारा अन्वेषण",
+		"specialAndLatestMoviesString": "विशेष और नवीनतम फिल्में",
+		"moreString": "अधिक",
+		"multiplexMoviesString": "मल्टीप्लेक्स फिल्में",
+		"popularMoviesString": "लोकप्रिय फिल्में",
+		"bestOfKidsString": "बेस्ट ऑफ किड्स"
+	},
+
+	"moreListPage": {
+		"multiplexMoviesString": "मल्टीप्लेक्स फिल्में"
+	},
+
+	"searchPage": {
+		"whatYouLikeString": "आज आप क्या देखना चाहेंगे?",
+		"searchForShowsString": "शो, श्रृंखला और फिल्मों के लिए खोजें",
+		"exploreByGenreString": "शैली द्वारा अन्वेषण",
+		"specialForYouString": "खास आप के लिए"
+	},
+
+	"watchLaterPage": {
+		"watchLaterString": "बाद में देखें",
+		"deleteString": "हटाएं",
+		"itemRemovedString": "आइटम निकाला गया",
+		"noItemInWatchLaterString": "बाद में देखने में कोई मद नहीं"
+	},
+
+	"accountPage": {
+		"accountString": "खाता",
+		"logoutString": "लॉग आउट",
+		"notPremiumString": "प्रीमियम नहीं है",
+		"getVidFlixPremiumString": "VidFlix प्रीमियम प्राप्त करें",
+		"editProfileString": "प्रोफ़ाइल संपादित करें",
+		"appSettingsString": "एप्लिकेशन सेटिंग",
+		"changeLanguageString": "भाषा बदलो",
+		"privacyPolicy": "गोपनीयता नीति",
+		"thanksForActivatingString": "प्रीमियम सक्रिय करने के लिए धन्यवाद!",
+		"choosePaymentMethodString": "भुगतान का तरीका चुनें",
+		"cancelString": "रद्द करें",
+		"payString": "भुगतान करे",
+		"vidFlixPremiumString": "VidFlix प्रीमियम",
+		"chargedYearlyString": "वार्षिक शुल्क लगाया",
+		"nonRefundableString": "नॉन रिफंडेबल",
+		"chargedMonthlyString": "मासिक शुल्क लिया",
+		"sureLogoutString": "आप निश्चित रूप से लॉगआउट करना चाहते हैं?"
+	},
+
+	"editProfilePage": {
+		"editProfileString": "प्रोफ़ाइल संपादित करें",
+		"phoneNumberString": "फ़ोन नंबर",
+		"emailString": "ईमेल",
+		"passwordString": "पासवर्ड",
+		"changePhoneNumberString": "फ़ोन नंबर बदलें",
+		"enterPhoneNumberString": "फोन नंबर दर्ज",
+		"okayString": "ठीक है",
+		"cancelString": "रद्द करें",
+		"changeYourPasswordString": "अपना पासवर्ड बदलें",
+		"oldPasswordString": "पुराना पासवर्ड",
+		"newPasswordString": "नया पासवर्ड",
+		"confirmNewPasswordString": "नए पासवर्ड की पुष्टि करें",
+		"changeEmailString": "ई - मेल बदलें",
+		"enterEmailString": "ईमेल दर्ज करें",
+		"chooseOptionsString": "विकल्प चुनें",
+		"yourOptionsAreString": "आपके विकल्प हैं",
+		"cameraString": "कैमरा",
+		"chooseFormGalleryString": "गैलरी से चयन करो"
+	},
+
+	"appSettingsPage": {
+		"appSettingsString": "एप्लिकेशन सेटिंग",
+		"cellularDataString": "सेलुलर डेटा",
+		"cellularDataForDownloadsString": "डाउनलोड के लिए सेलुलर डेटा",
+		"videoQualityForDownloadsString": "डाउनलोड के लिए वीडियो की गुणवत्ता",
+		"downloadsFasterString": "तेजी से डाउनलोड होता है और कम भंडारण का उपयोग करता है",
+		"useMoreStorageString": "अधिक भंडारण का उपयोग करें",
+		"deleteAllDownloadsString": "सभी डाउनलोड हटाएं",
+		"removeAllDownloadsString": "यह आपके फोन से सभी डाउनलोड किए गए वीडियो को हटा देगा।",
+		"nothingToDeleteString": "डिलीट करने के लिए कुछ भी नहीं",
+		"noDownloadedVideoString": "आपके डिवाइस पर कोई डाउनलोड किए गए वीडियो नहीं हैं",
+		"okayString": "ठीक है"
+	},
+
+	"privacyPolicyPage": {
+		"privacyPolicyString": "गोपनीयता नीति"
+	},
+
+	"categoryPage": {
+		"newMoviesString": "नई मूवी",
+		"moreString": "अधिक",
+		"hitMoviesString": "हिट फिल्में",
+		"popularMoviesString": "लोकप्रिय फिल्में",
+		"trendingString": "रुझान"
+	},
+
+	"videoPage": {
+		"webSeriesString": "वेब सीरीज",
+		"episodesString": "एपिसोड",
+		"youMayAlsoLikeString": "आपको यह भी पसंद आ सकता हैं",
+		"moreString": "अधिक"
+	},
+
+	"videoPlayPage": {
+		"moreEpisodesString": "अधिक एपिसोड",
+		"youMayAlsoLikeString": "आपको यह भी पसंद आ सकता हैं",
+		"moreString": "अधिक"
+	},
+
+	"notificationPage": {
+		"notificationsString": "सूचनाएं",
+		"noNotificationsString": "कोई सूचनाएं नहीं"
+	}
+}
