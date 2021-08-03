@@ -568,11 +568,6 @@ class _AccountState extends State<Account> {
                           InkWell(
                             onTap: () {
                               logoutUser();
-                              Navigator.push(
-                                  context,
-                                  PageTransition(
-                                      type: PageTransitionType.rightToLeft,
-                                      child: Home()));
                             },
                             child: Container(
                               width: (width / 3.5),
@@ -881,5 +876,7 @@ class _AccountState extends State<Account> {
   void logoutUser() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
     await prefs.clear();
+    Navigator.push(context,
+        PageTransition(type: PageTransitionType.rightToLeft, child: Login()));
   }
 }
