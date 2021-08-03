@@ -3,8 +3,10 @@ import 'package:page_transition/page_transition.dart';
 import 'package:vidflix/constant/constant.dart';
 import 'package:vidflix/functions/localizations.dart';
 import 'package:vidflix/pages/account/app_settings.dart';
+import 'package:vidflix/pages/account/calendar.dart';
+import 'package:vidflix/pages/account/kalendar.dart';
 import 'package:vidflix/pages/account/change_language.dart';
-import 'package:vidflix/pages/account/privacy_policy.dart';
+//import 'package:vidflix/pages/account/privacy_policy.dart';
 import 'package:vidflix/pages/home/home.dart';
 import 'package:vidflix/pages/account/edit_profile.dart';
 import 'package:vidflix/pages/login_signup/login.dart';
@@ -812,6 +814,32 @@ class _AccountState extends State<Account> {
                                           PageTransition(
                                               type: PageTransitionType
                                                   .bottomToTop,
+                                              child: Calendar()));
+                                    },
+                                    borderRadius: BorderRadius.circular(30.0),
+                                    child: Container(
+                                      width: width - 40.0,
+                                      height: 50.0,
+                                      alignment: Alignment.center,
+                                      decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(30.0),
+                                        color: Colors.orange,
+                                      ),
+                                      child: Text(
+                                        'Calendar Bursa',
+                                        style: headingStyle,
+                                      ),
+                                    ),
+                                  ),
+                                  heightSpace,
+                                  InkWell(
+                                    onTap: () {
+                                      Navigator.push(
+                                          context,
+                                          PageTransition(
+                                              type: PageTransitionType
+                                                  .bottomToTop,
                                               child: ChangeLanguage()));
                                     },
                                     borderRadius: BorderRadius.circular(30.0),
@@ -840,7 +868,7 @@ class _AccountState extends State<Account> {
                                           PageTransition(
                                               type: PageTransitionType
                                                   .bottomToTop,
-                                              child: PrivacyPolicy()));
+                                              child: Kalendar()));
                                     },
                                     borderRadius: BorderRadius.circular(30.0),
                                     child: Container(
