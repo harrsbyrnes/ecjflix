@@ -15,16 +15,56 @@ class _CalendarState extends State<Calendar> {
   int calendartItem = 4;
 
   final calendarItemList = [
-    {'title': 'New Years Day', 'image': 'assets/slider/5.jpeg'},
-    {'title': 'Chinese New Years Eve', 'image': 'assets/slider/5.jpeg'},
-    {'title': 'Wesak Day', 'image': 'assets/slider/5.jpeg'},
-    {'title': 'National Day', 'image': 'assets/slider/5.jpeg'},
-    {'title': 'Awal Muharram', 'image': 'assets/slider/5.jpeg'},
-    {'title': 'Nuzul Alquran', 'image': 'assets/slider/5.jpeg'},
-    {'title': 'Hari Raya Puasa', 'image': 'assets/slider/5.jpeg'},
-    {'title': 'Thaipusam', 'image': 'assets/slider/5.jpeg'},
-    {'title': 'Malaysia Day', 'image': 'assets/slider/5.jpeg'},
-    {'title': 'Christmas Day', 'image': 'assets/slider/5.jpeg'}
+    {
+      'title': 'New Years Day',
+      'date': '10 October',
+      'image': 'assets/slider/CNY.jpeg'
+    },
+    {
+      'title': 'Chinese New Years Eve',
+      'date': '10 October',
+      'image': 'assets/slider/CNY.jpeg'
+    },
+    {
+      'title': 'Wesak Day',
+      'date': '10 October',
+      'image': 'assets/slider/CNY.jpeg'
+    },
+    {
+      'title': 'National Day',
+      'date': '10 October',
+      'image': 'assets/slider/CNY.jpeg'
+    },
+    {
+      'title': 'Awal Muharram',
+      'date': '10 October',
+      'image': 'assets/slider/CNY.jpeg'
+    },
+    {
+      'title': 'Nuzul Alquran',
+      'date': '10 October',
+      'image': 'assets/slider/CNY.jpeg'
+    },
+    {
+      'title': 'Hari Raya Puasa',
+      'date': '10 October',
+      'image': 'assets/slider/CNY.jpeg'
+    },
+    {
+      'title': 'Thaipusam',
+      'date': '10 October',
+      'image': 'assets/slider/CNY.jpeg'
+    },
+    {
+      'title': 'Malaysia Day',
+      'date': '10 October',
+      'image': 'assets/slider/CNY.jpeg'
+    },
+    {
+      'title': 'Christmas Day',
+      'date': '10 October',
+      'image': 'assets/slider/CNY.jpeg'
+    }
   ];
   @override
   Widget build(BuildContext context) {
@@ -119,7 +159,7 @@ class _CalendarState extends State<Calendar> {
                       padding: EdgeInsets.all(fixPadding),
                       child: Container(
                         width: width - 30.0,
-                        height: 50.0,
+                        height: 90.0,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20.0),
                           image: DecorationImage(
@@ -132,15 +172,15 @@ class _CalendarState extends State<Calendar> {
                               bottom: 0.0,
                               child: Container(
                                 width: width - 30.0,
-                                height: 40.0,
+                                height: 25.0,
                                 alignment: Alignment.center,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.vertical(
                                       bottom: Radius.circular(20.0)),
-                                  color: Colors.black.withOpacity(0.7),
+                                  color: Colors.brown[900].withOpacity(0.7),
                                 ),
                                 child: Text(
-                                  item['title'],
+                                  item['date'],
                                   style: headingStyle,
                                 ),
                               ),
