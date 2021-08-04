@@ -12,58 +12,58 @@ class Calendar extends StatefulWidget {
 }
 
 class _CalendarState extends State<Calendar> {
-  int calendartItem = 4;
+  int calendartItem = 10;
 
   final calendarItemList = [
     {
       'title': 'New Years Day',
-      'date': '10 October',
-      'image': 'assets/slider/CNY.jpeg'
-    },
-    {
-      'title': 'Chinese New Years Eve',
-      'date': '10 October',
-      'image': 'assets/slider/CNY.jpeg'
-    },
-    {
-      'title': 'Wesak Day',
-      'date': '10 October',
-      'image': 'assets/slider/CNY.jpeg'
-    },
-    {
-      'title': 'National Day',
-      'date': '10 October',
-      'image': 'assets/slider/CNY.jpeg'
-    },
-    {
-      'title': 'Awal Muharram',
-      'date': '10 October',
-      'image': 'assets/slider/CNY.jpeg'
-    },
-    {
-      'title': 'Nuzul Alquran',
-      'date': '10 October',
-      'image': 'assets/slider/CNY.jpeg'
-    },
-    {
-      'title': 'Hari Raya Puasa',
-      'date': '10 October',
-      'image': 'assets/slider/CNY.jpeg'
+      'date': '1 January',
+      'image': 'assets/slider/nyd.jpeg'
     },
     {
       'title': 'Thaipusam',
+      'date': '28 January',
+      'image': 'assets/slider/thaipusam.jpeg'
+    },
+    // {
+    //   'title': 'Chinese New Year',
+    //   'date': '11-13 February',
+    //   'image': 'assets/slider/cny.jpeg'
+    // },
+    {
+      'title': 'National Day',
+      'date': '31 August',
+      'image': 'assets/slider/nd.jpeg'
+    },
+    {
+      'title': 'Awal Muharram',
+      'date': '10 August',
+      'image': 'assets/slider/awal.jpeg'
+    },
+    {
+      'title': 'Nuzul Alquran',
+      'date': '29 April',
+      'image': 'assets/slider/nuzul.jpeg'
+    },
+    {
+      'title': 'Hari Raya Puasa',
+      'date': '13-14 May',
+      'image': 'assets/slider/hrp.jpeg'
+    },
+    {
+      'title': 'Deepavali',
       'date': '10 October',
-      'image': 'assets/slider/CNY.jpeg'
+      'image': 'assets/slider/deepavali.jpeg'
     },
     {
       'title': 'Malaysia Day',
-      'date': '10 October',
-      'image': 'assets/slider/CNY.jpeg'
+      'date': '16 September',
+      'image': 'assets/slider/malaysiaday.jpeg'
     },
     {
       'title': 'Christmas Day',
-      'date': '10 October',
-      'image': 'assets/slider/CNY.jpeg'
+      'date': '25 December',
+      'image': 'assets/slider/christmas.jpeg'
     }
   ];
   @override
