@@ -9,7 +9,10 @@ import 'package:vidflix/pages/home/home_component/main_slider.dart';
 import 'package:vidflix/pages/home/home_component/multiplex_movies.dart';
 import 'package:vidflix/pages/home/home_component/popular_movies.dart';
 import 'package:vidflix/pages/home/home_component/special_latest_movies.dart';
+import 'package:vidflix/pages/account/account.dart';
+import 'package:vidflix/pages/login_signup/login.dart';
 import 'package:vidflix/pages/notification.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeMain extends StatefulWidget {
   @override
@@ -24,9 +27,9 @@ class _HomeMainState extends State<HomeMain> {
       appBar: AppBar(
         backgroundColor: blackColor,
         elevation: 0.0,
-        automaticallyImplyLeading: false,
+        automaticallyImplyLeading: true,
         title: Text(
-          'VidFlix',
+          'ECJ Flix',
           style: headingStyle,
         ),
         actions: <Widget>[
@@ -43,6 +46,7 @@ class _HomeMainState extends State<HomeMain> {
           ),
         ],
       ),
+      drawer: SideDrawer(),
       body: ListView(
         physics: BouncingScrollPhysics(),
         children: <Widget>[
@@ -180,5 +184,152 @@ class _HomeMainState extends State<HomeMain> {
         ],
       ),
     );
+  }
+}
+
+class SideDrawer extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    return Drawer(
+      child: Column(
+        children: <Widget>[
+          DrawerHeader(
+            child: Center(
+              child: Text(
+                'Menu',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.white, fontSize: 25),
+              ),
+            ),
+            decoration: BoxDecoration(
+              color: Colors.black,
+            ),
+          ),
+          ListTile(
+            leading: Icon(Icons.account_circle_sharp),
+            title: Text('Account'),
+            onTap: () => {
+              Navigator.push(
+                  context,
+                  PageTransition(
+                      type: PageTransitionType.rightToLeft, child: Account()))
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.home),
+            title: Text('Home'),
+            onTap: () => {Navigator.of(context).pop()},
+          ),
+          ListTile(
+            leading: Icon(Icons.border_color),
+            title: Text('Feedback'),
+            onTap: () => {Navigator.of(context).pop()},
+          ),
+          ListTile(
+            leading: Icon(Icons.exit_to_app),
+            title: Text('Logout'),
+            onTap: () => {logoutDialogue(context, width)},
+          ),
+        ],
+      ),
+    );
+  }
+
+  logoutDialogue(context, width) {
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (BuildContext context) {
+        // return object of type Dialog
+        return Dialog(
+          elevation: 0.0,
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+          child: Wrap(
+            children: [
+              Container(
+                padding: EdgeInsets.all(20.0),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Text(
+                      AppLocalizations.of(context)
+                          .translate('accountPage', 'sureLogoutString'),
+                      style: TextStyle(
+                        fontFamily: 'Mukta',
+                        fontSize: 21.0,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 8.0,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        InkWell(
+                          onTap: () {
+                            Navigator.pop(context);
+                          },
+                          child: Container(
+                            width: (width / 3.5),
+                            alignment: Alignment.center,
+                            padding: EdgeInsets.all(10.0),
+                            decoration: BoxDecoration(
+                              color: Colors.grey[300],
+                              borderRadius: BorderRadius.circular(5.0),
+                            ),
+                            child: Text(
+                              AppLocalizations.of(context)
+                                  .translate('accountPage', 'cancelString'),
+                              style: TextStyle(
+                                fontFamily: 'Mukta',
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            logoutUser(context);
+                          },
+                          child: Container(
+                            width: (width / 3.5),
+                            alignment: Alignment.center,
+                            padding: EdgeInsets.all(10.0),
+                            decoration: BoxDecoration(
+                              color: redColor,
+                              borderRadius: BorderRadius.circular(5.0),
+                            ),
+                            child: Text(
+                              AppLocalizations.of(context)
+                                  .translate('accountPage', 'logoutString'),
+                              style: TextStyle(
+                                fontFamily: 'Mukta',
+                                fontWeight: FontWeight.w500,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  void logoutUser(context) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.clear();
+    Navigator.push(context,
+        PageTransition(type: PageTransitionType.rightToLeft, child: Login()));
   }
 }
