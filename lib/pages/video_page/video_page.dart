@@ -2,11 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:vidflix/constant/constant.dart';
 import 'package:vidflix/functions/localizations.dart';
+import 'package:vidflix/pages/account/calendar.dart';
+import 'package:vidflix/pages/account/kalendar.dart';
 import 'package:vidflix/pages/category/more_list.dart';
 import 'package:vidflix/pages/home/home_component/popular_movies.dart';
 import 'package:vidflix/pages/video_page/episodes.dart';
 import 'package:vidflix/pages/video_page/image_section.dart';
 import 'package:vidflix/pages/video_page/title_description.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'dart:async';
 
 class VideoPage extends StatefulWidget {
   @override
@@ -14,6 +18,25 @@ class VideoPage extends StatefulWidget {
 }
 
 class _VideoPageState extends State<VideoPage> {
+  SharedPreferences sharedPreferences;
+  @override
+  void initState() {
+    super.initState();
+    checkSession();
+  }
+
+  Future checkSession() async {
+    SharedPreferences prefz = await SharedPreferences.getInstance();
+    String user = prefz.getString('vidid');
+    // Timer(
+    //     Duration(seconds: 3),
+    //     () => Navigator.push(
+    //           context,
+    //           MaterialPageRoute(
+    //               builder: (context) => user == null ? Calendar() : Kalendar()),
+    //         ));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
