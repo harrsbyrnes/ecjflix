@@ -18,52 +18,52 @@ class _CalendarState extends State<Calendar> {
     {
       'title': 'New Years Day',
       'date': '1 January',
-      'image': 'assets/slider/nyd.jpeg'
+      'image': 'assets/slider/black.JPG'
     },
     {
       'title': 'Thaipusam',
       'date': '28 January',
-      'image': 'assets/slider/thaipusam.jpeg'
+      'image': 'assets/slider/black.JPG'
     },
-    // {
-    //   'title': 'Chinese New Year',
-    //   'date': '11-13 February',
-    //   'image': 'assets/slider/cny.jpeg'
-    // },
+    {
+      'title': 'Chinese New Year',
+      'date': '11-13 February',
+      'image': 'assets/slider/black.JPG'
+    },
     {
       'title': 'National Day',
       'date': '31 August',
-      'image': 'assets/slider/nd.jpeg'
+      'image': 'assets/slider/black.JPG'
     },
     {
       'title': 'Awal Muharram',
       'date': '10 August',
-      'image': 'assets/slider/awal.jpeg'
+      'image': 'assets/slider/black.JPG'
     },
     {
       'title': 'Nuzul Alquran',
       'date': '29 April',
-      'image': 'assets/slider/nuzul.jpeg'
+      'image': 'assets/slider/black.JPG'
     },
     {
       'title': 'Hari Raya Puasa',
       'date': '13-14 May',
-      'image': 'assets/slider/hrp.jpeg'
+      'image': 'assets/slider/black.JPG'
     },
     {
       'title': 'Deepavali',
       'date': '10 October',
-      'image': 'assets/slider/deepavali.jpeg'
+      'image': 'assets/slider/black.JPG'
     },
     {
       'title': 'Malaysia Day',
       'date': '16 September',
-      'image': 'assets/slider/malaysiaday.jpeg'
+      'image': 'assets/slider/black.JPG'
     },
     {
       'title': 'Christmas Day',
       'date': '25 December',
-      'image': 'assets/slider/christmas.jpeg'
+      'image': 'assets/slider/black.JPG'
     }
   ];
   @override
@@ -172,7 +172,7 @@ class _CalendarState extends State<Calendar> {
                               bottom: 0.0,
                               child: Container(
                                 width: width - 30.0,
-                                height: 25.0,
+                                height: 30.0,
                                 alignment: Alignment.center,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.vertical(
@@ -184,7 +184,30 @@ class _CalendarState extends State<Calendar> {
                                   style: headingStyle,
                                 ),
                               ),
-                            )
+                            ),
+                            Container(
+                              width: width - 30.0,
+                              height: 50.0,
+                              alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.vertical(
+                                    top: Radius.circular(20.0)),
+                                color: Colors.brown[900].withOpacity(0.7),
+                              ),
+                              child: Text(
+                                item['title'],
+                                style: headingStyle,
+                              ),
+                            ),
+                            // Text(
+                            //   item['title'],
+                            //   textAlign: TextAlign.center,
+                            //   style: TextStyle(
+                            //     height: 2,
+                            //     fontSize: 20,
+                            //     color: Colors.yellow[300],
+                            //   ),
+                            // ),
                           ],
                         ),
                       ),
