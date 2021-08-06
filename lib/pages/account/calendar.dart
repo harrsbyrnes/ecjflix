@@ -127,7 +127,7 @@ class _CalendarState extends State<Calendar> {
                       child: IconSlideAction(
                         caption: AppLocalizations.of(context)
                             .translate('watchLaterPage', 'viewString'),
-                        color: Colors.red,
+                        color: Colors.blue,
                         icon: Icons.beach_access,
                         onTap: () {
                           // setState(() {
@@ -149,11 +149,18 @@ class _CalendarState extends State<Calendar> {
                   ],
                   child: InkWell(
                     onTap: () {
-                      Navigator.push(
-                          context,
-                          PageTransition(
-                              type: PageTransitionType.fade,
-                              child: VideoPage()));
+                      // Navigator.push(
+                      //     context,
+                      //     PageTransition(
+                      //         type: PageTransitionType.fade,
+                      //         child: VideoPage()));
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: Text(item['date'],
+                            // AppLocalizations.of(context).translate(
+                            //     'watchLaterPage', 'itemRemovedString'),
+                            style: TextStyle(color: blackColor)),
+                        backgroundColor: whiteColor,
+                      ));
                     },
                     child: Padding(
                       padding: EdgeInsets.all(fixPadding),
