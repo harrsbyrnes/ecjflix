@@ -72,6 +72,15 @@ class _CalendarState extends State<Calendar> {
     return Scaffold(
       backgroundColor: blackColor,
       appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back_rounded,
+            color: whiteColor,
+          ),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
         backgroundColor: blackColor,
         elevation: 0.0,
         automaticallyImplyLeading: false,
