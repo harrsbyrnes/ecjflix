@@ -12,6 +12,7 @@ import 'package:vidflix/pages/home/home_component/special_latest_movies.dart';
 import 'package:vidflix/pages/account/account.dart';
 import 'package:vidflix/pages/login_signup/login.dart';
 import 'package:vidflix/pages/notification.dart';
+import 'package:vidflix/pages/Ejournal.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class HomeMain extends StatefulWidget {
@@ -222,9 +223,14 @@ class SideDrawer extends StatelessWidget {
             onTap: () => {Navigator.of(context).pop()},
           ),
           ListTile(
-            leading: Icon(Icons.border_color),
-            title: Text('Feedback'),
-            onTap: () => {Navigator.of(context).pop()},
+            leading: Icon(Icons.book_rounded),
+            title: Text('E-Journal'),
+            onTap: () => {
+              Navigator.push(
+                  context,
+                  PageTransition(
+                      type: PageTransitionType.rightToLeft, child: EJournal()))
+            },
           ),
           ListTile(
             leading: Icon(Icons.exit_to_app),
