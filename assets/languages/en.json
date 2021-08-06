@@ -72,7 +72,8 @@
 		"watchLaterString": "Watch Later",
 		"deleteString": "Delete",
 		"itemRemovedString": "Item Removed",
-		"noItemInWatchLaterString": "No Item in Watch Later"
+		"noItemInWatchLaterString": "No Item in Watch Later",
+		"viewString": "View"
 	},
 
 	"accountPage": {
