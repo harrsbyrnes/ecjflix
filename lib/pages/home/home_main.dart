@@ -212,6 +212,7 @@ class SideDrawer extends StatelessWidget {
             leading: Icon(Icons.account_circle_sharp),
             title: Text('Account'),
             onTap: () => {
+              Navigator.pop(context),
               Navigator.push(
                   context,
                   PageTransition(
@@ -222,6 +223,7 @@ class SideDrawer extends StatelessWidget {
             leading: Icon(Icons.calendar_today_rounded),
             title: Text('Calendar'),
             onTap: () => {
+              Navigator.pop(context),
               Navigator.push(
                   context,
                   PageTransition(
@@ -232,6 +234,7 @@ class SideDrawer extends StatelessWidget {
             leading: Icon(Icons.book_rounded),
             title: Text('E-Journal'),
             onTap: () => {
+              Navigator.pop(context),
               Navigator.push(
                   context,
                   PageTransition(
