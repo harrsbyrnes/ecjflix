@@ -18,52 +18,52 @@ class _CalendarState extends State<Calendar> {
     {
       'title': 'New Years Day',
       'date': '1 January',
-      'image': 'assets/slider/black.JPG'
+      'image': 'assets/slider/malaysiapakah.jpg'
     },
     {
       'title': 'Thaipusam',
       'date': '28 January',
-      'image': 'assets/slider/black.JPG'
+      'image': 'assets/slider/busra.jpg'
     },
     {
       'title': 'Chinese New Year',
       'date': '11-13 February',
-      'image': 'assets/slider/black.JPG'
+      'image': 'assets/slider/busra.jpg'
     },
     {
       'title': 'National Day',
       'date': '31 August',
-      'image': 'assets/slider/black.JPG'
+      'image': 'assets/slider/busra.jpg'
     },
     {
       'title': 'Awal Muharram',
       'date': '10 August',
-      'image': 'assets/slider/black.JPG'
+      'image': 'assets/slider/busra.jpg'
     },
     {
       'title': 'Nuzul Alquran',
       'date': '29 April',
-      'image': 'assets/slider/black.JPG'
+      'image': 'assets/slider/busra.jpg'
     },
     {
       'title': 'Hari Raya Puasa',
       'date': '13-14 May',
-      'image': 'assets/slider/black.JPG'
+      'image': 'assets/slider/busra.jpg'
     },
     {
       'title': 'Deepavali',
       'date': '10 October',
-      'image': 'assets/slider/black.JPG'
+      'image': 'assets/slider/busra.jpg'
     },
     {
       'title': 'Malaysia Day',
       'date': '16 September',
-      'image': 'assets/slider/black.JPG'
+      'image': 'assets/slider/busra.jpg'
     },
     {
       'title': 'Christmas Day',
       'date': '25 December',
-      'image': 'assets/slider/black.JPG'
+      'image': 'assets/slider/busra.jpg'
     }
   ];
   @override
@@ -72,12 +72,21 @@ class _CalendarState extends State<Calendar> {
     return Scaffold(
       backgroundColor: blackColor,
       appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back_rounded,
+            color: whiteColor,
+          ),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
         backgroundColor: blackColor,
         elevation: 0.0,
         automaticallyImplyLeading: false,
         centerTitle: true,
         title: Text(
-          'Calendar Cuti Bursa Malaysia',
+          'Calendar Cuti Bursa Malaysia 2021',
           // AppLocalizations.of(context)
           //     .translate('watchLaterPage', 'watchLaterString'),
           style: headingStyle,
@@ -126,20 +135,20 @@ class _CalendarState extends State<Calendar> {
                       ),
                       child: IconSlideAction(
                         caption: AppLocalizations.of(context)
-                            .translate('watchLaterPage', 'deleteString'),
-                        color: Colors.red,
-                        icon: Icons.delete,
+                            .translate('watchLaterPage', 'viewString'),
+                        color: Colors.blue,
+                        icon: Icons.beach_access,
                         onTap: () {
-                          setState(() {
-                            calendarItemList.removeAt(index);
-                            calendartItem = calendartItem - 1;
-                          });
+                          // setState(() {
+                          //   calendarItemList.removeAt(index);
+                          //   calendartItem = calendartItem - 1;
+                          // });
 
                           // Then show a snackbar.
                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                            content: Text(
-                                AppLocalizations.of(context).translate(
-                                    'watchLaterPage', 'itemRemovedString'),
+                            content: Text(item['title'],
+                                // AppLocalizations.of(context).translate(
+                                //     'watchLaterPage', 'itemRemovedString'),
                                 style: TextStyle(color: blackColor)),
                             backgroundColor: whiteColor,
                           ));
@@ -149,11 +158,18 @@ class _CalendarState extends State<Calendar> {
                   ],
                   child: InkWell(
                     onTap: () {
-                      Navigator.push(
-                          context,
-                          PageTransition(
-                              type: PageTransitionType.fade,
-                              child: VideoPage()));
+                      // Navigator.push(
+                      //     context,
+                      //     PageTransition(
+                      //         type: PageTransitionType.fade,
+                      //         child: VideoPage()));
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: Text(item['date'],
+                            // AppLocalizations.of(context).translate(
+                            //     'watchLaterPage', 'itemRemovedString'),
+                            style: TextStyle(color: blackColor)),
+                        backgroundColor: whiteColor,
+                      ));
                     },
                     child: Padding(
                       padding: EdgeInsets.all(fixPadding),
@@ -177,7 +193,7 @@ class _CalendarState extends State<Calendar> {
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.vertical(
                                       bottom: Radius.circular(20.0)),
-                                  color: Colors.brown[900].withOpacity(0.7),
+                                  color: Colors.brown[900].withOpacity(0.8),
                                 ),
                                 child: Text(
                                   item['date'],
@@ -192,7 +208,7 @@ class _CalendarState extends State<Calendar> {
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.vertical(
                                     top: Radius.circular(20.0)),
-                                color: Colors.brown[900].withOpacity(0.7),
+                                color: Colors.brown[900].withOpacity(0.8),
                               ),
                               child: Text(
                                 item['title'],
