@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:vidflix/constant/constant.dart';
+import 'package:flutter_slidable/flutter_slidable.dart';
+import 'package:page_transition/page_transition.dart';
+import 'package:vidflix/functions/localizations.dart';
 import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
@@ -23,10 +26,11 @@ class _EJournalState extends State<EJournal> {
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: blackColor,
       appBar: AppBar(
-        backgroundColor: blackColor,
+        backgroundColor: Colors.grey,
         centerTitle: true,
         title: Text('E-Journal', style: headingStyle),
         leading: IconButton(
@@ -60,48 +64,77 @@ class _EJournalState extends State<EJournal> {
                   itemCount: snapshot.data.length,
                   itemBuilder: (context, index) {
                     List list = snapshot.data;
-                    return ListTile(
-                      leading: GestureDetector(
-                        child: Icon(
-                          Icons.edit,
-                          color: whiteColor,
+                    return Slidable(
+                      actionPane: SlidableDrawerActionPane(),
+                      actionExtentRatio: 0.15,
+                      secondaryActions: <Widget>[
+                        Container(
+                          margin: EdgeInsets.only(
+                            top: 5.0,
+                            bottom: 5.0,
+                          ),
+                          child: IconSlideAction(
+                            caption: AppLocalizations.of(context)
+                                .translate('watchLaterPage', 'deleteString'),
+                            color: Colors.red,
+                            icon: Icons.delete,
+                            onTap: () {
+                              setState(() {
+                                var url =
+                                    'https://portal.mywau.com/dev/flutter/php/delete_ejournal.php';
+                                http.post(url, body: {
+                                  'id': list[index]['id'],
+                                });
+                              });
+
+                              // Then show a snackbar.
+                              ScaffoldMessenger.of(context)
+                                  .showSnackBar(SnackBar(
+                                content: Text(
+                                    AppLocalizations.of(context).translate(
+                                        'watchLaterPage', 'itemRemovedString'),
+                                    style: TextStyle(color: blackColor)),
+                                backgroundColor: whiteColor,
+                              ));
+                            },
+                          ),
                         ),
-                        onTap: () {
-                          // Navigator.push(
-                          //   context,
-                          //   MaterialPageRoute(
-                          //     builder: (context) => AddEditPage(
-                          //       list: list,
-                          //       index: index,
-                          //     ),
-                          //   ),
-                          // );
-                          debugPrint('Edit Clicked');
-                        },
-                      ),
-                      title: Text(
-                        list[index]['stock'],
-                        style: TextStyle(color: Colors.white),
-                      ),
-                      subtitle: Text(
-                        list[index]['buy_date'],
-                        style: TextStyle(color: Colors.white),
-                      ),
-                      trailing: GestureDetector(
-                        child: Icon(
-                          Icons.delete,
-                          color: whiteColor,
+                      ],
+                      child: Container(
+                        decoration: BoxDecoration(
+                          //color: Colors.grey,
+                          border:
+                              Border(bottom: BorderSide(color: Colors.grey)),
                         ),
-                        onTap: () {
-                          setState(() {
-                            var url =
-                                'https://portal.mywau.com/dev/flutter/php/delete_ejournal.php';
-                            http.post(url, body: {
-                              'id': list[index]['id'],
-                            });
-                          });
-                          debugPrint('delete Clicked');
-                        },
+                        child: ListTile(
+                          dense: true,
+                          leading: GestureDetector(
+                            child: Icon(
+                              Icons.edit,
+                              color: whiteColor,
+                            ),
+                            onTap: () {
+                              // Navigator.push(
+                              //   context,
+                              //   MaterialPageRoute(
+                              //     builder: (context) => AddEditPage(
+                              //       list: list,
+                              //       index: index,
+                              //     ),
+                              //   ),
+                              // );
+                              debugPrint('Edit Clicked');
+                            },
+                          ),
+                          title: Text(
+                            list[index]['stock'],
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          subtitle: Text(
+                            list[index]['buy_date'],
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
                       ),
                     );
                   })
