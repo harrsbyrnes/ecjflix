@@ -55,7 +55,15 @@ class _PopularMoviesListState extends State<PopularMoviesList> {
               Navigator.push(
                   context,
                   PageTransition(
-                      type: PageTransitionType.fade, child: VideoPage()));
+                      type: PageTransitionType.fade,
+                      child: VideoPage(
+                        list: datad,
+                        index: index,
+                      )));
+              // Navigator.push(
+              //     context,
+              //     PageTransition(
+              //         type: PageTransitionType.fade, child: VideoPage()));
             },
             child: Container(
               width: 100.0,

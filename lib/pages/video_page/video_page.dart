@@ -13,15 +13,24 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:async';
 
 class VideoPage extends StatefulWidget {
+  final List list;
+  final int index;
+  VideoPage({this.list, this.index});
   @override
   _VideoPageState createState() => _VideoPageState();
 }
 
 class _VideoPageState extends State<VideoPage> {
+  TextEditingController movieName = TextEditingController();
   SharedPreferences sharedPreferences;
+  bool editMode = false;
   @override
   void initState() {
     super.initState();
+    if (widget.index != null) {
+      editMode = true;
+      movieName.text = widget.list[widget.index]['name'];
+    }
     checkSession();
   }
 
@@ -59,11 +68,21 @@ class _VideoPageState extends State<VideoPage> {
           TitleDescription(),
           Padding(
             padding: EdgeInsets.all(fixPadding),
-            child: Text(
-              AppLocalizations.of(context)
-                  .translate('videoPage', 'episodesString'),
-              style: headingStyle,
+            child: TextField(
+              style: TextStyle(color: Colors.green),
+              controller: movieName,
+              decoration: InputDecoration(
+                labelText: 'Last Name',
+                enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.green, width: 2.5)),
+              ),
             ),
+
+            // Text(
+            //   AppLocalizations.of(context)
+            //       .translate('videoPage', 'episodesString'),
+            //   style: headingStyle,
+            // ),
           ),
           EpisodesList(),
           heightSpace,
@@ -86,9 +105,9 @@ class _VideoPageState extends State<VideoPage> {
                             type: PageTransitionType.bottomToTop,
                             child: MoreList()));
                   },
-                  child: Text(
-                      AppLocalizations.of(context)
-                          .translate('videoPage', 'moreString'),
+                  child: Text(widget.list[widget.index]['name'],
+                      // AppLocalizations.of(context)
+                      //     .translate('videoPage', 'moreString'),
                       style: linkStyle),
                 ),
               ],

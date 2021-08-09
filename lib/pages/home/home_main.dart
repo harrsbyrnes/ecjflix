@@ -71,8 +71,9 @@ class _HomeMainState extends State<HomeMain> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  AppLocalizations.of(context)
-                      .translate('homePage', 'specialAndLatestMoviesString'),
+                  'Special Movie(shared preference)',
+                  // AppLocalizations.of(context)
+                  //     .translate('homePage', 'specialAndLatestMoviesString'),
                   style: headingStyle,
                 ),
                 InkWell(
@@ -130,7 +131,7 @@ class _HomeMainState extends State<HomeMain> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  'We Can Yumcha 2.0',
+                  'We Can Yumcha 2.0(this.index)',
                   // AppLocalizations.of(context)
                   //     .translate('homePage', 'popularMoviesString'),
                   style: headingStyle,
